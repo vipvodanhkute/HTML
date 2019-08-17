@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @keyframes slidy {
+            0% {
+                left: 0%;
+            }
+
+            20% {
+                left: 0%;
+            }
+
+            25% {
+                left: -100%;
+            }
+
+            45% {
+                left: -100%;
+            }
+
+            50% {
+                left: -200%;
+            }
+
+            70% {
+                left: -200%;
+            }
+
+            75% {
+                left: 300%;
+            }
+
+            95% {
+                left: -300%;
+            }
+
+            100% {
+                left: -400%;
+            }
+        }
+
+        #photo-gallery {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        #photo-gallery .slider {
+            position: relative;
+            width: 500%;
+            font-size: 0;
+            animation: 30s slidy infinite;
+            background: rgba(0, 0, 0, 0.4);
+            margin-bottom: 10px;
+        }
+
+        #photo-gallery .slider div {
+            width: 20%;
+            height: auto;
+            display: inline-block;
+            position: inherit;
+        }
+        #photo-gallery .slider div img{
+            width: 100%;
+        }
+        #photo-gallery .slider div p{ 
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0,0, 0.4);
+            color:#fff;
+            width: 100%;
+            font-size: 2rem;
+            padding:.6rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="photo-gallery">
+        <div class="slider">
+            <div>
+                <img src="./image/Aatrox_0.jpg" alt="">
+                <p>Aatrox 0</p>
+            </div>
+            <div>
+                <img src="./image/Aatrox_1.jpg" alt="">
+                <p>Aatrox 1</p>
+            </div>
+            <div>
+                <img src="./image/Aatrox_2.jpg" alt="">
+                <p>Aatrox 2</p>
+            </div>
+            <div>
+                <img src="./image/Aatrox_3.jpg" alt="">
+                <p>Aatrox 3</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
